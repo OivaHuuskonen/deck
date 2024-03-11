@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Handlee&family=Mate:ital@0;1&family=Neucha&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*body {
+    position: relative;
+    height: 100%;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.swiper {
+    width: 30%;
+    height: 70%; 
+    border-style:solid 1px;
+    border-color: #f9b4ab;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    /*color: #fff;*/
+    background-color: #fdebd3;
+    border-style:solid 1px;
+    border-color: #f9b4ab;
+}
+
+@layer base {
+    html {
+
+        font-family: "Special Elite", system-ui;
+       /* font-family: "Raleway", sans-serif;
+       font-family: "Neucha", cursive;
+       font-family: "Klee One", cursive;
+       font-family: "Darker Grotesque", sans-serif;
+       font-family: "Fredericka the Great", serif;
+       font-family: "Trocchi", serif;
+       font-family: "Poiret One", sans-serif;
+        font-family: "Special Elite", system-ui;
+       font-family: "Red Hat Display", sans-serif;
+       font-family: "Source Serif 4", serif;
+       font-family: "Amatic SC", sans-serif;
+       font-family: "Mate", serif;
+       font-family: "Special Elite", system-ui;
+       font-family: "Courier Prime", monospace;
+       font-family: "Handlee", cursive;
+       font-family: "Raleway", sans-serif;
+       font-family: "Playfair Display", serif;*/
+    }
+
+    /*li {
+        @apply px-4;
+        @apply cursor-pointer
+    }*/
+}
+
+
+
+
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Handlee&family=Mate:ital@0;1&family=Neucha&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    position: relative;
+    height: 100%;
+  }
+
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.flip-card {
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.swiper {
+    width: 240px;
+    height: 320px;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: skyblue;
+  }
+
+
+ @layer base {
+    html {
+     /* font-family: "Klee One", cursive;
+       font-family: "Darker Grotesque", sans-serif;
+       font-family: "Fredericka the Great", serif;
+       font-family: "Trocchi", serif;
+       font-family: "Poiret One", sans-serif;*/
+       /* font-family: "Special Elite", system-ui;
+       font-family: "Red Hat Display", sans-serif;
+       font-family: "Source Serif 4", serif;
+      
+       
+       font-family: "Amatic SC", sans-serif;
+       font-family: "Mate", serif;
+       font-family: "Special Elite", system-ui;
+       font-family: "Courier Prime", monospace;
+       font-family: "Handlee", cursive;
+       
+       font-family: "Raleway", sans-serif;
+       font-family: "Playfair Display", serif;*/
+
+      /* font-family: "Neucha", cursive;
+    }
+
+   li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+ }*/
+
+
