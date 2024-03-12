@@ -30,8 +30,8 @@
     /* align-items: center; Centers Swiper content vertically */
    /* justify-content: center;  Centers Swiper content horizontally */
 
-    width: 52%;
-    height: 100%; 
+    width: 65%;
+    height: 120%; 
     border:solid 1px #000000;
     border-radius: 18px;
 }
