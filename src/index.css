@@ -34,8 +34,9 @@
     height: 120%; 
     border:solid 1px #000000;
     border-radius: 18px;*/
-    width: 65%;
-    height: 80vh; /* Adjust the height as needed */
+ 
+    width: 45%;
+    height: 70vh; /* Adjust the height as needed */
     border: solid 1px #000000;
     border-radius: 18px;
 }
