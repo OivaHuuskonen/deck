@@ -454,11 +454,11 @@ const CardFlip = ({ title, content, title2, content2, backgroundImagef, backgrou
                 transition={{ duration: 0.6, animationDirection: "normal" }}
                 onAnimationComplete={() => setIsAnimating(false)}
             >
-                <div className="flip-card-front w-full h-full bg-cover rounded-lg p-0" style={{ backgroundImage: `url(${backgroundImagef})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}> 
+                <div className="flip-card-front w-full h-full bg-cover rounded-lg text-center p-0" style={{ backgroundImage: `url(${backgroundImagef})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}> 
 
 
              
-                    <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+                    <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50 text-center" />
  
                     <div className="relative flex flex-col gap-3 text-center">
                 <h1 className="text-lg lg:text-lg sm:text-base">{title}</h1>
