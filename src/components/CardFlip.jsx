@@ -443,7 +443,7 @@ const CardFlip = ({ title, content, title2, content2, backgroundImagef, backgrou
     }
 
     return (
-        <div className="flex flex-col gap-6 group relative shadow-lg text-red border-radius: 18px; h-[250px] w-[200px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer z-20" onClick={handleFlip}>
+        <div className="flex flex-col gap-6 group relative shadow-lg text-red border-radius: 18px; h-[250px] w-[200px] lg:h-[700px] lg:w-[550px] overflow-hidden cursor-pointer z-20" onClick={handleFlip}>
             <motion.div
                 className="flip-card-inner w-full h-full"
                 initial={false}
@@ -453,10 +453,22 @@ const CardFlip = ({ title, content, title2, content2, backgroundImagef, backgrou
             >
                 <div className="flip-card-front w-full h-full bg-cover rounded-lg p-0" style={{ backgroundImage: `url(${backgroundImagef})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+ 
+                    <div className="relative flex flex-col gap-3 text-center">
+                <h1 className="text-lg lg:text-lg sm:text-base">{title}</h1>
+                        <p className="lg:text-base sm:text-xs">{content}</p>
+                    
+                </div>
                 </div>
 
                 <div className="flip-card-back w-full h-full bg-cover rounded-lg p-0" style={{ backgroundImage: `url(${backgroundImageb})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
                     <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+
+                    <div className="relative flex flex-col gap-3 text-center">
+                <h1 className="text-lg lg:text-lg sm:text-base">{title2}</h1>
+                        <p className="lg:text-base sm:text-base">{content2}</p>
+                    
+                </div>
                 </div>
             </motion.div>
         </div>

@@ -103,12 +103,12 @@
     },
     {
        //icon: RxRocket,
-      //title: "12 pyykkilista",
-      //content: "Olemme riippuvaisia persoonallisuuksia, jotka kammoavat hylkäämistä, ja teemme mitä tahansa jatkaaksemme suhdetta, ettei meidän tarvitsisi kokea tuskallisia hylkäämisen tunteita, joita saimme eläessämme sairaiden ihmisten kanssa, jotka eivät koskaan olleet emotionaalisesti läsnä meitä varten.",
-      backgroundImagef: ff12,
-      backgroundImageb: b12,
-      //title2: "12 käätöpuoli",
-      //content2: "Kasvamme itsenäisyyteen emmekä enää kammoa hylkäämistä. Meillä on keskinäiseen riippuvuuteen perustuvia suhteita terveisiin ihmisiin - ei riippuvaisia suhteita emotionaalisesti tavoittamattomiin ihmisiin."
+      title: "12 pyykkilista",
+      content: "Olemme riippuvaisia persoonallisuuksia, jotka kammoavat hylkäämistä, ja teemme mitä tahansa jatkaaksemme suhdetta, ettei meidän tarvitsisi kokea tuskallisia hylkäämisen tunteita, joita saimme eläessämme sairaiden ihmisten kanssa, jotka eivät koskaan olleet emotionaalisesti läsnä meitä varten.",
+      //backgroundImagef: ff12,
+      //backgroundImageb: b12,
+      title2: "12 käätöpuoli",
+      content2: "Kasvamme itsenäisyyteen emmekä enää kammoa hylkäämistä. Meillä on keskinäiseen riippuvuuteen perustuvia suhteita terveisiin ihmisiin - ei riippuvaisia suhteita emotionaalisesti tavoittamattomiin ihmisiin."
     },
 
     {
