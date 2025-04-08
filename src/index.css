@@ -8,7 +8,33 @@
     perspective: 1000px;
 }
 
+
 .flip-card-inner {
+    position: relative; /* Tämä pitää molemmat puolet hallinnassa */
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskittää sisällön vaakasuunnassa */
+    align-items: center; /* Keskittää sisällön pystysuunnassa */
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+
+
+/*.flip-card-inner {
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
@@ -21,7 +47,7 @@
 
 .flip-card-back {
     transform: rotateY(180deg);
-}
+}*/
 
 .swiper {
   /*  width: 100%;
@@ -59,19 +85,28 @@
     }
 }
 
+/*.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-weight: bold;
+    background-color: #e2d4bf;
+    border:solid 1px #000000;
+}*/
+
 .swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 18px;
- 
-    /*font-size: 22px;
-    font-size: 22px;*/
     font-weight: bold;
-    /*color: #fff;*/
     background-color: #e2d4bf;
-    border:solid 1px #000000;
+    border: solid 1px #000000;
+    padding: 16px; /* Lisää marginaalia sisällön ympärille */
+    box-sizing: border-box; /* Estää paddingin kasvattamasta kokoa */
 }
+
 
 /* Define default font sizes */
 /* .card-flip {
