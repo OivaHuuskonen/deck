@@ -7,9 +7,9 @@
   import forest5 from "../assets/forest5.jpg";
   import forest6 from "../assets/forest6.jpg";
   import forest7 from "../assets/forest7.jpg";
-  import forest8 from "../assets/forest8.jpg";*/
+  import forest8 from "../assets/forest8.jpg";
   import ff12 from "../assets/ff12.jpg";
-  import b12 from "../assets/b12.jpg";
+  import b12 from "../assets/b12.jpg";*/
   
   export const ServiceData = [
     {

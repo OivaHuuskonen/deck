@@ -13,20 +13,20 @@ const CardFlip = ({ title, content, title2, content2, backgroundImagef, backgrou
     }
 
     return (
-       
-       
-        <div className="flex flex-col gap-6 group relative shadow-lg h-64 w-64 sm:h-72 sm:w-72 md:h-130 md:w-96 lg:h-210 lg:w-96 overflow-hidden cursor-pointer z-20" onClick={handleFlip}>
-        <motion.div
-                className="flip-card-inner w-full h-full"                
-                initial={false}
-                animate={{ rotateY: isFlipped ? 180 : 360 }}
-                transition={{ duration: 0.6, animationDirection: "normal" }}
-                onAnimationComplete={() => setIsAnimating(false)}
-            >
+
+<div className="flex flex-col gap-6 group relative shadow-lg flex-1 overflow-hidden cursor-pointer z-20">
+  <motion.div
+    className="flip-card-inner w-full h-full"
+    initial={false}
+    animate={{ rotateY: isFlipped ? 180 : 360 }}
+    transition={{ duration: 0.6, animationDirection: "normal" }}
+    onAnimationComplete={() => setIsAnimating(false)}
+  >
 
     <div className="flip-card-front w-full h-full bg-cover border-[1px] border-slate-100 rounded-2xl p-0" style={{ backgroundImage: `url(${backgroundImagef})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
     <div className="absolute inset-0 bg-[#F5F5DC] opacity-10 group-hover:opacity-50 text-center" />
     <div className="relative flex flex-col gap-3 text-center justify-center items-center h-full">
+    
         <h1 className="text-lg lg:text-lg md:text-base sm:text-sm">{title}</h1>
         <p className="lg:text-base md:text-base sm:text-xs">{content}</p>
     </div>

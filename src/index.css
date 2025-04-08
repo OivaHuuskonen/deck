@@ -4,7 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
-.flip-card {
+
+
+/* Kortin keskitys */ 
+.flip-card { 
+    display: flex; justify-content: center; align-items: center; perspective: 1000px; 
+} 
+.flip-card-inner { 
+    transition: transform 0.6s; transform-style: preserve-3d; position: relative; 
+    /* Lisää tämä, jotta lapsielementit ovat oikein asemoituja */ 
+    width: 100%; /* Tee leveys täydeksi */ 
+    height: 100%; /* Tee korkeus täydeksi */ 
+}
+    .flip-card-front, .flip-card-back { 
+    position: absolute; width: 100%;  
+    height: 100%;  
+    backface-visibility: hidden; 
+} 
+.flip-card-back { 
+    transform: rotateY(180deg); 
+}
+
+
+.CardFlip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+
+
+/*.flip-card {
     perspective: 1000px;
 }
 
@@ -21,7 +56,7 @@
 
 .flip-card-back {
     transform: rotateY(180deg);
-}
+}*/
 
 .swiper {
   /*  width: 100%;
@@ -45,10 +80,10 @@
 }
 
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 639px) {
     .swiper {
-        width: 75%;
-        height: 70vh;
+        width: 90%;
+        height: 85vh;
     }
 }
 
@@ -59,19 +94,35 @@
     }
 }
 
-.swiper-slide {
+.swiper-slide { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 18px; 
+    font-weight: bold; 
+    background-color: #e2d4bf; 
+    border: solid 1px #000000; 
+    padding: 10px; /* Lisää hieman tyhjää tilaa */ 
+    box-sizing: border-box; /* Sisällytä padding kokoon */ 
+}
+
+.swiper-slide-active .CardFlip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+/*.swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 18px;
- 
-    /*font-size: 22px;
-    font-size: 22px;*/
     font-weight: bold;
-    /*color: #fff;*/
     background-color: #e2d4bf;
     border:solid 1px #000000;
-}
+}*/
 
 /* Define default font sizes */
 /* .card-flip {

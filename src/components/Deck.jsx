@@ -1,5 +1,3 @@
-/* Deck.jsx
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -7,70 +5,17 @@ import CardFlip from './CardFlip';
 import { ServiceData } from '../constants';
 import { EffectCards } from "swiper";
 
-const PageHeader = ({ title }) => (
-  <div className="text-center">
-    <p className="text-4xl font-bold text-[#000000] inline border-b-2 border-[#000000] sm:text leading-normal">
-      {title}
-    </p>
-  </div>
-);
-
 const Deck = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-[#FFFAF0]">
       <div className="max-w-[1000px] w-full pb-10">
-        <PageHeader title="14 Kohdan pyykkilista" />
-        <br></br><br></br>
-        <div className="mt-8 w-full h-full">
-          <Swiper
-            effect={"cards"}
-            grabCursor={true}
-            modules={[EffectCards]}
-            className="mySwiper"
-            style={{ width: '100%', height: '100%' }} // Set Swiper width to 100%
-          >
-            
-            {ServiceData.map((item) => (
-              <SwiperSlide key={item.title}>                
-                <CardFlip {...item} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Deck;*/
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/effect-cards";
-import CardFlip from './CardFlip';
-import { ServiceData } from '../constants';
-import { EffectCards } from "swiper";
-
-const PageHeader = ({ title }) => (
-  <div className="text-center">
-    <p className="text-4xl font-bold text-[#000000] inline border-b-2 border-[#000000] sm:text leading-normal">
-      {title}
-    </p>
-  </div>
-);
-
-const Deck = () => {
-  return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[#FFFAF0]">
-      <div className="max-w-[1000px] w-full pb-10">
-        <PageHeader title="14 Kohdan pyykkilista" />
-        <br></br><br></br>
         <div className="mt-8">
           <Swiper
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
             className="mySwiper"
+
           >
             {ServiceData.map((item) => (
               <SwiperSlide key={item.title}>
