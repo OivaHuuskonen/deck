@@ -4,284 +4,90 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-/* Kortin keskitys */ 
-.flip-card { 
-    display: flex; justify-content: center; align-items: center; perspective: 1000px; 
-} 
-.flip-card-inner { 
-    transition: transform 0.6s; transform-style: preserve-3d; position: relative; 
-    /* Lisää tämä, jotta lapsielementit ovat oikein asemoituja */ 
-    width: 100%; /* Tee leveys täydeksi */ 
-    height: 100%; /* Tee korkeus täydeksi */ 
-}
-    .flip-card-front, .flip-card-back { 
-    position: absolute; width: 100%;  
-    height: 100%;  
-    backface-visibility: hidden; 
-} 
-.flip-card-back { 
-    transform: rotateY(180deg); 
-}
-
-
-.CardFlip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  }
-
-
-
-
-
-/*.flip-card {
-    perspective: 1000px;
-}
-
+/* Flip card styles */
 .flip-card-inner {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
 
 .flip-card-front,
 .flip-card-back {
-    position: absolute;
-    backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flip-card-back {
-    transform: rotateY(180deg);
-}*/
-
-.swiper {
-  /*  width: 100%;
-    height: 100%;*/ 
-    /*display: flex;  Ensures the Swiper container takes up the entire screen */
-    /* align-items: center; Centers Swiper content vertically */
-   /* justify-content: center;  Centers Swiper content horizontally */
-
- /*   width: 65%;
-    height: 120%; 
-    border:solid 1px #000000;
-    border-radius: 18px;*/
- 
-   /* width: 45%;
-    height: 70vh;  Adjust the height as needed */
-
-    width: 100%;
-    height: 80vh;
-    border: solid 1px #000000;
-    border-radius: 18px;
+  transform: rotateY(180deg);
 }
 
+/* Swiper container */
+.swiper {
+  width: 90%;
+  max-width: 350px;
+  height: 500px;
+  padding: 0;
+  margin: 0 auto;
+}
 
-@media screen and (min-width: 639px) {
-    .swiper {
-        width: 90%;
-        height: 85vh;
-    }
+/* Swiper slides */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-weight: bold;
+  background-color: #e2d4bf;
+  border: solid 1px #000000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 640px) {
+  .swiper {
+    width: 85%;
+    max-width: 400px;
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 80%;
+    max-width: 450px;
+    height: 600px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .swiper {
-        width: 50%;
-        height: 70vh;
-    }
-}
-
-.swiper-slide { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    border-radius: 18px; 
-    font-weight: bold; 
-    background-color: #e2d4bf; 
-    border: solid 1px #000000; 
-    padding: 10px; /* Lisää hieman tyhjää tilaa */ 
-    box-sizing: border-box; /* Sisällytä padding kokoon */ 
-}
-
-.swiper-slide-active .CardFlip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .swiper {
+    width: 75%;
+    max-width: 500px;
+    height: 650px;
   }
+}
 
-
-
-/*.swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-weight: bold;
-    background-color: #e2d4bf;
-    border:solid 1px #000000;
-}*/
-
-/* Define default font sizes */
-/* .card-flip {
-    font-size: 1rem; Default font size 
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-/* Adjust the height for even smaller screens 
-
-@media screen and (max-width: 480px) {
-    .swiper {
-        height: 60vh; 
-    }
-}*/
-
-
-
-
-
-/* Define font sizes for smaller screens Adjust font size for smaller screens*/
- /*    @media screen and (max-width: 768px) {
-    .card-flip {
-        font-size: 0.8rem;
-    }
-}*/
-
-/* Define font sizes for even smaller screens --- Adjust font size for even smaller screens */
-/* @media screen and (max-width: 480px) {
-    .card-flip {
-        font-size: 0.6rem; 
-    }
-} */
+/* Small mobile devices */
+@media screen and (max-width: 400px) {
+  .swiper {
+    width: 95%;
+    height: 450px;
+  }
+}
 
 @layer base {
-    html {
-
-        font-family: "Special Elite", system-ui;
-       /* font-family: "Raleway", sans-serif;
-       font-family: "Neucha", cursive;
-       font-family: "Klee One", cursive;
-       font-family: "Darker Grotesque", sans-serif;
-       font-family: "Fredericka the Great", serif;
-       font-family: "Trocchi", serif;
-       font-family: "Poiret One", sans-serif;
-        font-family: "Special Elite", system-ui;
-       font-family: "Red Hat Display", sans-serif;
-       font-family: "Source Serif 4", serif;
-       font-family: "Amatic SC", sans-serif;
-       font-family: "Mate", serif;
-       font-family: "Special Elite", system-ui;
-       font-family: "Courier Prime", monospace;
-       font-family: "Handlee", cursive;
-       font-family: "Raleway", sans-serif;
-       font-family: "Playfair Display", serif;*/
-    }
-
-    /*li {
-        @apply px-4;
-        @apply cursor-pointer
-    }*/
-}
-
-
-
-
-
-
-
-/*@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Handlee&family=Mate:ital@0;1&family=Neucha&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-    position: relative;
-    height: 100%;
+  html {
+    font-family: "Special Elite", system-ui;
   }
-
-  #app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-.flip-card {
-    perspective: 1000px;
 }
 
-.flip-card-inner {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    backface-visibility: hidden;
-}
-
-.flip-card-back {
-    transform: rotateY(180deg);
-}
-
-.swiper {
-    width: 240px;
-    height: 320px;
-  }
-  
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-    background-color: skyblue;
-  }
-
-
- @layer base {
-    html {
-     /* font-family: "Klee One", cursive;
-       font-family: "Darker Grotesque", sans-serif;
-       font-family: "Fredericka the Great", serif;
-       font-family: "Trocchi", serif;
-       font-family: "Poiret One", sans-serif;*/
-       /* font-family: "Special Elite", system-ui;
-       font-family: "Red Hat Display", sans-serif;
-       font-family: "Source Serif 4", serif;
-      
-       
-       font-family: "Amatic SC", sans-serif;
-       font-family: "Mate", serif;
-       font-family: "Special Elite", system-ui;
-       font-family: "Courier Prime", monospace;
-       font-family: "Handlee", cursive;
-       
-       font-family: "Raleway", sans-serif;
-       font-family: "Playfair Display", serif;*/
-
-      /* font-family: "Neucha", cursive;
-    }
-
-   li {
-        @apply px-4;
-        @apply cursor-pointer
-    }
- }*/
 
 

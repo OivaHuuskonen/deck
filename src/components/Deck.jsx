@@ -7,15 +7,14 @@ import { EffectCards } from "swiper";
 
 const Deck = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[#FFFAF0]">
-      <div className="max-w-[1000px] w-full pb-10">
-        <div className="mt-8">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFFAF0] px-4">
+      <div className="w-full max-w-screen-xl mx-auto py-8">
+        <div className="flex justify-center w-full">
           <Swiper
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
             className="mySwiper"
-
           >
             {ServiceData.map((item) => (
               <SwiperSlide key={item.title}>
@@ -29,7 +28,44 @@ const Deck = () => {
   );
 };
 
-export default Deck;      
+export default Deck;
+
+
+
+
+/*import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import CardFlip from './CardFlip';
+import { ServiceData } from '../constants';
+import { EffectCards } from "swiper";
+
+
+const Deck = () => {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen bg-[#FFFAF0]">
+      <div className="max-w-[1000px] w-full pb-10">
+  
+        <div className="mt-8">
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper"
+          >
+            {ServiceData.map((item) => (
+              <SwiperSlide key={item.title}>
+                <CardFlip {...item} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Deck;      */
 
 
 
