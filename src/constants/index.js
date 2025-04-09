@@ -1,6 +1,6 @@
 
   
-  /*import forest1 from "../assets/forest1.jpg";
+  import forest1 from "../assets/forest1.jpg";
   import forest2 from "../assets/forest2.jpg";
   import forest3 from "../assets/forest3.jpg";
   import forest4 from "../assets/forest4.jpg";
@@ -8,24 +8,26 @@
   import forest6 from "../assets/forest6.jpg";
   import forest7 from "../assets/forest7.jpg";
   import forest8 from "../assets/forest8.jpg";
-  import ff12 from "../assets/ff12.jpg";
-  import b12 from "../assets/b12.jpg";*/
+  
+ /* import b12 from "../assets/b12.jpg";*/
   
   export const ServiceData = [
     {
      // icon: RxCrop,
       title: "1 pyykkilista",
       content: "Meistä tuli eristäytyneitä sekä ihmisiä ja auktoriteettihahmoja pelkääviä.",
-     // backgroundImage: forest1,
+      backgroundImagef: forest1,
      
       title2: "1 kääntöpuoli",
-      content2: "Siirrymme pois eristyksistä emmekä enää epärealistisesti pelkää muita ihmisiä - emme edes auktoriteettihahmoja."
+      content2: "Siirrymme pois eristyksistä emmekä enää epärealistisesti pelkää muita ihmisiä - emme edes auktoriteettihahmoja.",
+      backgroundImageb: forest2,
     },
     {
      // icon: RxPencil2,
       title: "2 pyykkilista",
       content: "Meistä tuli hyväksynnänhakijoita ja kadotimme siinä ohessa identiteettimme.",
-    //  backgroundImage: forest2,
+      backgroundImagef: forest5,
+      backgroundImageb: forest6,
       title2: "2 kääntöpuoli",
       content2: "Emme tarvitse muita määrittämään itseämme."
     },
@@ -57,7 +59,6 @@
       // icon: RxRocket,
       title: "6 pyykkilista",
       content: "Meillä on ylikehittynyt vastuuntunto, ja meidän on helpompi huolehtia muista kuin itsestämme; näin meidän ei tarvitse katsoa liian läheltä omia virheitämme, jne.",
-    //  backgroundImage: forest6,
       title2: "6 käätöpuoli",
       content2: "Emme käytä mahdollistamista tapana välttää katsomasta omia vajavuuksiamme."
     },

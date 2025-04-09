@@ -5,9 +5,15 @@ import CardFlip from './CardFlip';
 import { ServiceData } from '../constants';
 import { EffectCards } from "swiper";
 
+// #F7E6CA
+// #E8D59E
+// #D9BBB0
+// #AD9C8E
+
+
 const Deck = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#FFFAF0] px-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#F7E6CA] px-4">
       <div className="w-full max-w-screen-xl mx-auto py-8">
         <div className="flex justify-center w-full">
           <Swiper
