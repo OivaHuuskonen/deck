@@ -13,7 +13,7 @@ import { EffectCards } from "swiper";
 
 const Deck = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#F7E6CA] px-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#EAE7DC] px-4">
       <div className="w-full max-w-screen-xl mx-auto py-8">
         <div className="flex justify-center w-full">
           <Swiper

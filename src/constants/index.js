@@ -1,5 +1,3 @@
-
-  
   import forest1 from "../assets/forest1.jpg";
   import forest2 from "../assets/forest2.jpg";
   import forest3 from "../assets/forest3.jpg";
@@ -16,18 +14,18 @@
      // icon: RxCrop,
       title: "1 pyykkilista",
       content: "Meistä tuli eristäytyneitä sekä ihmisiä ja auktoriteettihahmoja pelkääviä.",
-      backgroundImagef: forest1,
+      //backgroundImagef: forest1,
      
       title2: "1 kääntöpuoli",
       content2: "Siirrymme pois eristyksistä emmekä enää epärealistisesti pelkää muita ihmisiä - emme edes auktoriteettihahmoja.",
-      backgroundImageb: forest2,
+      //backgroundImageb: forest2,
     },
     {
      // icon: RxPencil2,
       title: "2 pyykkilista",
       content: "Meistä tuli hyväksynnänhakijoita ja kadotimme siinä ohessa identiteettimme.",
-      backgroundImagef: forest5,
-      backgroundImageb: forest6,
+      //backgroundImagef: forest5,
+      //backgroundImageb: forest6,
       title2: "2 kääntöpuoli",
       content2: "Emme tarvitse muita määrittämään itseämme."
     },
